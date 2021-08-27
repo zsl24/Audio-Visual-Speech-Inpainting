@@ -1,4 +1,4 @@
-# Audio-visual-speak-inpainter
-Demo for speak inpainter
+# Audio-visual-speech-inpainter
+Demo for speech inpainting
 
 Reference paper: Audio-Visual Speech Inpainting with Deep Learning  
