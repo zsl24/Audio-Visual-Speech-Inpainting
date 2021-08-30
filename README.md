@@ -1,4 +1,4 @@
-# Audio-visual-speech-inpainter
+# Audio-Visual-Speech-Inpainter
 Demo for speech inpainting
 Reference paper: [Audio-Visual Speech Inpainting with Deep Learning](https://arxiv.org/abs/2010.04556)  
 Note: The code is not completed for now.  
@@ -25,6 +25,8 @@ imutils 0.5.4
 - Install Cmake and add its path to system path: C:/ProgramFile/Cmake/Bin
 - pip install cmake
 
+## Audio-Visual Dataset: GRID Corpus
+Please download from: [GRID Corpus](http://spandh.dcs.shef.ac.uk/gridcorpus/)
 
 ## How to extract facial landmarks using dlib
 - place facial landmark detector model file, shape_predictor_68_face_landmarks.dat, to root file of this project
