@@ -3,16 +3,16 @@ Demo for speech inpainting
 Reference paper: Audio-Visual Speech Inpainting with Deep Learning  
 
 ## Package Requirement
-python 3.7
-tensorflow 2.4.0
-numpy 1.19.2 (this is the version compatible with both given version of tensorflow and pytorch)
-librosa 0.8.1
-sounddevice 0.4.2
-pytorch 1.7.1 (torchaudio 0.7.2)
-cuda 11.0
-cudnn 8.04
-opencv
-imutils 0.5.4
+python 3.7  
+tensorflow 2.4.0  
+numpy 1.19.2 (this is the version compatible with both given version of tensorflow and pytorch)  
+librosa 0.8.1  
+sounddevice 0.4.2 
+pytorch 1.7.1 (torchaudio 0.7.2)  
+cuda 11.0  
+cudnn 8.04  
+opencv  
+imutils 0.5.4  
 
 
 ## Configuration of dlib
