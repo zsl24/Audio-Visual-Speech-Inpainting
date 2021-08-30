@@ -1,6 +1,7 @@
 # Audio-visual-speech-inpainter
 Demo for speech inpainting
-Reference paper: Audio-Visual Speech Inpainting with Deep Learning  
+Reference paper: [Audio-Visual Speech Inpainting with Deep Learning](https://arxiv.org/abs/2010.04556)  
+Note: The code is not completed for now.  
 
 ## Package Requirement
 python 3.7  
