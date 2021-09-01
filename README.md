@@ -28,12 +28,16 @@ we use dlib to extract facial landmarks from video of speakers
 
 ## Audio-Visual Dataset: GRID Corpus
 Please download from: [GRID Corpus](http://spandh.dcs.shef.ac.uk/gridcorpus/)  
-We collect audio visual human speech dataset GRID Corpus as the one for training, validation and test for this supervised learning task. This dataset contains both audio and video of people uttering short sentences. The audio is recorded in very silent recording studio which make inferencing noise impossible. The face of speaking person is centered in the video frame, and we can clear see very detailed movement of the face in the video.  
 
-In order to conduct supervised learning, dataset splitting is required. We divide this dataset into 3 parts, training set, validation set and test set. We assign 25 speakers (13 male, 12 female) for training, 4 speakers (2 male, 2 female) for validation and the rest 4 (2 male, 2 female) for testing. Basically, all parts of this dataset show no gender difference, which will train models that are unbiased to the gender of the speaker.  
+There are 33 speakers in this dataset, S1~S20, S20~S34 (Video data for S21 is not available). For each speaker, 1000 pairs of audio video about different uttering sentences are included. (Actually, some videos in speaker number 15, S15, are blurry and not able to detector facial landmarks, the list of file names are included in file errorlog.txt in this repository)
+
+We followed data spliting strategy that assigns 25 speakers (13 male, 12 female, S1-S20, S22-25, S28) for training, 4 speakers (2 male, 2 female, S26-S27, S29, S31) for validation and the rest 4 (2 male, 2 female, S30, S32-S34) for testing.  
 
 ## Feature maps for both audio and video
-Because feature extractions for both audio and video are time consuming, we cannot do feature extraction every time we train. Therefore, before training, we extract the feature map and save them as numpy array in .npy files.
+Because feature extractions for both audio and video are time consuming, we cannot do feature extraction every time we train. Therefore, before training, we extract the feature map and save them as numpy array in .npy files.  
+
+The path 
+>
 
 
 ## How to extract facial landmarks using dlib
