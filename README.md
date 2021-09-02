@@ -29,16 +29,31 @@ we use dlib to extract facial landmarks from video of speakers
 ## Audio-Visual Dataset: GRID Corpus
 Please download from: [GRID Corpus](http://spandh.dcs.shef.ac.uk/gridcorpus/)  
 
-There are 33 speakers in this dataset, S1~S20, S20~S34 (Video data for S21 is not available). For each speaker, 1000 pairs of audio video about different uttering sentences are included. (Actually, some videos in speaker number 15, S15, are blurry and not able to detector facial landmarks, the list of file names are included in file errorlog.txt in this repository)
+There are 33 speakers in this dataset, S1-S20, S20-S34 (Video data for S21 is not available). For each speaker, 1000 pairs of audio video about different uttering sentences are included. (Actually, some videos in speaker number 15, S15, are blurry and not able to detector facial landmarks, the list of file names are included in file errorlog.txt in this repository)
 
 We followed data spliting strategy that assigns 25 speakers (13 male, 12 female, S1-S20, S22-25, S28) for training, 4 speakers (2 male, 2 female, S26-S27, S29, S31) for validation and the rest 4 (2 male, 2 female, S30, S32-S34) for testing.  
 
 ## Feature maps for both audio and video
 Because feature extractions for both audio and video are time consuming, we cannot do feature extraction every time we train. Therefore, before training, we extract the feature map and save them as numpy array in .npy files.  
 
-The path 
->
-
+The path directory of dataset:  
+~~~
+/dataset  
+  /audio  
+    /train  
+      s1.npy  
+      s2.npy  
+      ...  
+    /val  
+    /test  
+  /video  
+    /train  
+      s1.npy  
+      s2.npy  
+      ...  
+    /val  
+    /test  
+~~~
 
 ## How to extract facial landmarks using dlib
 - place facial landmark detector model file, shape_predictor_68_face_landmarks.dat, to root path of this project
